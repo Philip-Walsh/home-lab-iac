@@ -15,4 +15,11 @@ resource "proxmox_virtual_environment_vm" "workstation" {
   network_device {
     bridge = "vmbr0"
   }
+
+  # hostpci {
+  #   device = "hostpci0"
+  #   id     = "0000:01:00.0" # todo: set correct
+  #   pcie   = true
+  #   rombar = true
+  # }
 }
